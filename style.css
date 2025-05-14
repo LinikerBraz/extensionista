@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #d99a4e;
+    --cor02: #594058;
+    --cor03: #000000;
+    --cor04: #ffffff;
+    --cor05: #f1c40f;
+    --cor06: #262626;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor04);
+    background-color: var(--cor03);
+}
+
+.equipe{
+    margin-bottom: 17px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+}
+
+.hero-section .carousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item {
+    height: 100%;
+}
+
+.hero-section .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Text Colors */
+.text-gold {
+    color: var(--cor01);
+}
+
+.text-yellow {
+    color: var(--cor05);
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--cor06);
+}
+
+.gold-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--cor01);
+    border-radius: 50%;
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--cor03);
+}
+
+.service-card {
+    background-color: var(--cor06);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Products Section */
+.products-section {
+    background-color: var(--cor02);
+}
+
+.product-preview {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.product-preview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-preview:hover img {
+    transform: scale(1.05);
+}
+
+/* Location Section */
+.location-section {
+    background-color: var(--cor06);
+}
+
+.location-card {
+    background-color: var(--cor03);
+    height: 100%;
+}
+
+.map-container {
+    height: 250px;
+}
+
+.contact-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--cor01) !important;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--cor01);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--cor03);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--cor01);
+    border: 1px solid var(--cor01);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--cor01);
+    color: var(--cor04);
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--cor01);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #c08a3e;
+    color: white;
+}
+
+.btn-outline-gold {
+    background-color: transparent;
+    color: var(--cor01);
+    border: 1px solid var(--cor01);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--cor01);
+    color: white;
+}
+
+/* Products Page */
+.products-header {
+    background-color: var(--cor03);
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.products-list {
+    background-color: var(--cor06);
+}
+
+.product-card {
+    background-color: var(--cor03);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
