@@ -176,8 +176,9 @@ body {
 }
 
 .btn-gold:hover {
-    background-color: #c08a3e;
-    color: white;
+    background-color: transparent;
+    color:var(--cor01);
+    border: 1px solid var(--cor01);
 }
 
 .btn-outline-gold {
@@ -233,6 +234,7 @@ body {
     }
 }
 
+
 @media (max-width: 576px) {
     .hero-section {
         height: 60vh;
@@ -242,4 +244,6 @@ body {
         font-size: 2rem;
     }
 }
+
+
 
