@@ -1,4 +1,4 @@
-// Atualizar o ano atual no footer
+
 document.addEventListener('DOMContentLoaded', function() {
     const currentYearElements = document.querySelectorAll('#current-year');
     const currentYear = new Date().getFullYear();
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         element.textContent = currentYear;
     });
     
-    // Inicializar o carrossel com intervalo de 5 segundos
+    
     const heroCarousel = document.getElementById('heroCarousel');
     if (heroCarousel) {
         const carousel = new bootstrap.Carousel(heroCarousel, {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Adicionar smooth scroll para links internos
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Adicionar funcionalidade aos botões de compra (exemplo)
+    
     const buyButtons = document.querySelectorAll('.btn-gold');
     buyButtons.forEach(button => {
         button.addEventListener('click', function() {
