@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     
-    const buyButtons = document.querySelectorAll('.btn-gold');
+    /*const buyButtons = document.querySelectorAll('.btn-gold');
     buyButtons.forEach(button => {
         button.addEventListener('click', function() {
             if (this.textContent.trim() === 'Comprar') {
@@ -42,4 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
+});*/});
